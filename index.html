@@ -13,7 +13,7 @@
     <header>
       <nav>
         <ul class="header__links-list">
-          <li class="header__links-list-item"><a href="#cover">главная</a></li>
+          <li class="header__links-list-item header__links-list-item_no-bullit"><a href="#cover" class="header__link-active">главная</a></li>
           <li class="header__links-list-item"><a href="#lots">посмотреть лоты</a></li>
           <li class="header__links-list-item"><a href="#about">об аукционе</a></li>
         </ul>
@@ -28,8 +28,7 @@
       </address>
     </header>
     <main>
-      <div class="cover" id="cover">
-        <img src="images/cover.jpg" alt="Оно тебе надо" class="cover-background">
+      <section class="cover" id="cover">
         <h1 class="cover__title">
           <span class="aligned-text_left">оно</span>
           <span class="aligned-text_center">тебе</span>
@@ -37,16 +36,15 @@
         </h1>
         <div class="cover__description">
           <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
-          <button class="bet-button">сделать ставку</button>
+          <button class="bet-button" type="button">сделать ставку</button>
         </div>
-      </div>
-      <div class="lots" id="lots">
+      </section>
+      <section class="lots" id="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
-            <a class="card-link">
-              <article class="card">
-                <img src="images/card-lot-01.jpg" alt="Фон карточки фильма" class="card-image">
+            <a class="card-link" href="">
+              <article class="card card_type_film">
                 <div class="card-text">
                   <h3 class="card__title">Фильм режиссёра, который бросил киношколу</h3>
                   <p class="card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
@@ -55,9 +53,8 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
-              <article class="card">
-                <img src="images/card-lot-02.jpg" alt="Фон карточки книги" class="card-image">
+            <a class="card-link" href="">
+              <article class="card card_type_book">
                 <div class="card-text">
                   <h3 class="card__title">Книга, где описан один скучный день из жизни рекламного агента</h3>
                   <p class="card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
@@ -66,9 +63,8 @@
             </a>
           </li>
           <li class="lots__card-list-item">
-            <a class="card-link">
-              <article class="card">
-                <img src="images/card-lot-03.jpg" alt="Фон карточки картины" class="card-image">
+            <a class="card-link" href="">
+              <article class="card card_type_picture">
                 <div class="card-text">
                   <h3 class="card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                   <p class="card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
@@ -78,8 +74,8 @@
           </li>
         </ul>
         <a class="lots__look-more-link">посмотреть больше</a>
-      </div>
-      <div class="about" id="about">
+      </section>
+      <section class="about" id="about">
         <div class="about__logo">
           <img src="images/logo-white.svg" alt="Логотип" class="about__logo-image">
         </div>
@@ -91,7 +87,7 @@
 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <address class="footer__address">
@@ -99,15 +95,13 @@
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
-      <menu class="footer__menu">
-        <nav>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-link"><a href="#cover">главная</a></li>
-            <li class="footer__menu-link"><a href="#lots">посмотреть лоты</a></li>
-            <li class="footer__menu-link"><a href="#about">об аукционе</a></li>
-          </ul>
-        </nav>
-      </menu>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-link"><a href="#cover" class="footer__link-active">главная</a></li>
+          <li class="footer__menu-link"><a href="#lots">посмотреть лоты</a></li>
+          <li class="footer__menu-link"><a href="#about">об аукционе</a></li>
+        </ul>
+      </nav>
       <ul class="footer__social-list">
         <li><a class="footer__social-link"><img src="images/yt.svg" alt="Иконка YouTube" class="footer__social-icon"></a></li>
         <li><a class="footer__social-link"><img src="images/vk.svg" alt="Иконка VK" class="footer__social-icon"></a></li>
@@ -116,3 +110,4 @@
     </footer>
   </body>
 </html>
+
