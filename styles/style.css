@@ -7,21 +7,22 @@ header {
 
 footer {
     margin-top: 180px;
-    padding: 0;
+    padding-bottom: 82px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
 }
 
 address {
-    max-width: 242px;
+    max-width: 240px;
     margin-left: 184px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     justify-self: start;
     align-items: flex-start;
-    align-self: start;
+    align-self: center;
     font-family: Raleway, Arial, sans-serif;
     font-style: normal;
     font-size: 18px;
@@ -57,9 +58,7 @@ address {
     height: 105px;
 }
 
-.header__address {
-    margin-top: 5px;
-    max-width: 240px;
+header address {
     justify-self: end;
 }
 
@@ -155,7 +154,7 @@ address {
 
 .lots {
     width: 1100px;
-    margin: 180px 0 120px;
+    margin: 180px 0 119px;
     padding: 0 24px;
 }
 
@@ -194,25 +193,20 @@ address {
     width: 100%;
     position: relative;
     padding: 48px 40px;
-    box-sizing: border-box;
+    box-sizing: border-box;background-size: cover;
+    background-position: center;
 }
 
 .card_type_film {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card-lot-01.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_book {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card-lot-02.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/card-lot-03.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 .card-text {
@@ -252,7 +246,7 @@ address {
 
 .about {
     width: 1052px;
-    margin: 120px 24px 180px;
+    margin: 119px 24px 180px;
     display: grid;
     grid-template-columns: 334px auto;
 }
@@ -298,7 +292,7 @@ address {
     font-size: 20px;
 }
 
-.footer__address {
+footer address {
     justify-self: left;
     margin-left: 50px;
 }
